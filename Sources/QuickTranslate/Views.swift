@@ -79,7 +79,8 @@ struct SettingsView: View {
                     }
                 }.padding(8)
             } label: { Text("翻译服务") }
-            Text("Quick Translate · 0.3.3").font(.caption).foregroundStyle(.secondary)
+            Text("Quick Translate · \(Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "")")
+                .font(.caption).foregroundStyle(.secondary)
         }
         .padding(24).frame(width: 590).fixedSize(horizontal: true, vertical: true)
         .onAppear { endpoint = model.settings.endpoint; modelName = model.settings.model }

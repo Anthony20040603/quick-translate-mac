@@ -278,7 +278,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, NSMe
     }
     @objc private func showAbout() {
         NSApp.orderFrontStandardAboutPanel(options: [
-            .applicationName: "Quick Translate", .applicationVersion: "0.3.3"
+            .applicationName: "Quick Translate",
+            .applicationVersion: Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? ""
         ])
     }
     @objc private func quit() { NSApp.terminate(nil) }
@@ -295,7 +296,7 @@ struct QuickTranslateApp {
     @MainActor
     static func main() {
         let application = NSApplication.shared
-        application.setActivationPolicy(.regular)
+        application.setActivationPolicy(.accessory)
         let delegate = AppDelegate()
         application.delegate = delegate
         withExtendedLifetime(delegate) { application.run() }
