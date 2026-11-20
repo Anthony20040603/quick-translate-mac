@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+    <key>CFBundleIdentifier</key><string>com.anthony.quicktranslate.mac</string>
+    <key>CFBundleName</key><string>Quick Translate</string>
+    <key>CFBundleDisplayName</key><string>Quick Translate</string>
+    <key>CFBundleExecutable</key><string>QuickTranslate</string>
+    <key>CFBundleIconFile</key><string>Untitled</string>
+    <key>CFBundleIconName</key><string>Untitled</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleShortVersionString</key><string>0.3.3</string>
+    <key>CFBundleVersion</key><string>6</string>
+    <key>LSMinimumSystemVersion</key><string>14.0</string>
+    <key>LSUIElement</key><false/>
+    <key>NSHighResolutionCapable</key><true/>
+    <key>NSPrincipalClass</key><string>NSApplication</string>
+</dict></plist>
